@@ -1,3 +1,156 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+li,
+a,
+button,
+p,
+h1,
+h2,
+h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  color: #ffcb08;
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.logo-full {
+  display: flex;
+  align-items: center;
+}
+
+.logo-full p {
+  padding: 0px 10px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 40px;
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+main {
+  padding: 30px 10%;
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poke-logo {
+  max-width: 350px;
+  height: auto;
+  text-align: center;
+}
+
+.welcome-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.welcome-images img {
+  max-width: 30%;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 1 auto;
+}
+
+/* Mobile styling w/media query */
+
+@media only screen and (max-width: 426px) {
+  header {
+    flex-direction: column;
+    padding: 10px 2%;
+  }
+
+  main {
+    padding: 10px 2%;
+  }
+
+  .nav__links li {
+    display: none;
+  }
+
+  header button {
+    display: none;
+  }
+
+  .poke-logo {
+    width: 200px;
+  }
+
+  .welcome-images {
+    flex-direction: column;
+  }
+
+  .welcome-images img {
+    max-width: 100%;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  p {
+    padding: 10px;
+    margin: 10px;
+    line-height: 32px;
+  }
+}
