@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codecademy: Responsive Club Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="font-sans">
+    <header
+      class="
+        flex flex-col flex-wrap
+        items-center
+        justify-between
+        bg-gray-700
+        text-white
+        p-3
+        sm:flex-row
+      "
+    >
+      <logo class="flex items-center">
+        <img
+          class="h-10 fill-current"
+          src="img/pokeball-pokemon-svgrepo-com.svg"
+          alt="pokeball logo"
+        />
+        <h2 class="p-2 font-bold uppercase text-2xl">
+          Pokemon Collecting Club
+        </h2>
+      </logo>
+      <ul class="flex flex-wrap text-lg">
+        <li class="p-2">About</li>
+        <li class="p-2">Events</li>
+        <li class="p-2">Contact</li>
+      </ul>
+    </header>
+    <main class="flex flex-col items-center">
+      <div>
+        <img class="w-56 m-4" src="img/catchem.jpg" alt="catch em all" />
+      </div>
+      <h2 class="text-2xl font-semibold text-center p-2 m-2">
+        Come join the fun!
+      </h2>
+      <p class="text-xl text-center p-2 m-2">
+        Meet up with Pokemon trainers in your area, working together to catch
+        'em all!
+      </p>
+      <div
+        class="
+          flex flex-wrap
+          align-middle
+          items-center
+          justify-around
+          p-2
+          w-screen
+          sm:flex-row
+          flex-col
+        "
+      >
+        <img class="h-80 p-2" src="img/pokeball.jpg" alt="pokeball" />
+        <img
+          class="h-80 p-2"
+          src="img/pika-squirtle.jpg"
+          alt="pikachu and squirtle"
+        />
+        <img class="h-80 p-2" src="img/jolteon.jpg" alt="jolteon" />
+      </div>
+    </main>
+  </body>
+</html>
