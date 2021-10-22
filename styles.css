@@ -74,7 +74,7 @@ p {
 
 button {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgba(42, 111, 182, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(42, 111, 182, 0.8);
 }
 
 main {
@@ -103,15 +103,77 @@ main {
 
 .welcome-images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 .welcome-images img {
-  max-width: 30%;
+  min-height: 30%;
+  width: 30%;
   padding: 10px;
   margin: 10px;
   flex: 1 1 auto;
+}
+
+.mid-banner {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: #0f0f0f;
+  align-content: center;
+  justify-content: center;
+}
+
+quote {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+  background-color: #0f0f0f;
+  padding: 5px 10px 5px 10px;
+  line-break: strict;
+}
+
+attribution {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 5px 10px 5px 30px;
+  color: white;
+  background-color: #0f0f0f;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore img {
+  max-width: 50%;
+  border: 0.5px solid #090909;
+  margin: 20px;
+}
+
+footer {
+  padding: 0px 10%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(42, 111, 182, 1);
+}
+
+.contact p,
+.contact h2 {
+  background-color: rgba(42, 111, 182, 1);
 }
 
 /* Mobile styling w/media query */
@@ -144,6 +206,7 @@ main {
 
   .welcome-images img {
     max-width: 100%;
+    width: auto;
     padding: 2px;
     margin: 2px;
   }
@@ -152,5 +215,25 @@ main {
     padding: 10px;
     margin: 10px;
     line-height: 32px;
+  }
+
+  .mid-banner {
+    margin-top: 20px;
+  }
+
+  quote {
+    font-size: 1.5rem;
+  }
+
+  attribution {
+    font-size: 1rem;
+  }
+
+  .explore img {
+    max-width: 90vw;
+  }
+
+  footer {
+    padding: 10px 2%;
   }
 }
